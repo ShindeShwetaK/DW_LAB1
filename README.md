@@ -59,6 +59,12 @@ In the context of this lab, the primary challenge is to build a robust data pipe
 - **Plots**:
   - **Bar Gragh**: Shows us the Volume-Price Change Correlation by Symbol.
   - **Scatter Plot**: Shows us the Volume Change Scatter Plot (by Symbol and Date).
+ 
+### 4. `Snowflake_ML`
+- **Purpose**: Snowflake ML queries to forecast data.
+- **Key Functions**:
+  - To create a view based on we we can create a predection model.
+  - Call the model to forecast new few days data(Forecasting_2024-10-14 12_14am.csv)
 
 ### 4. `*.csv`
 -  Several CSV files serve as table extracts, providing the data needed for this project. These files are used to simulate real-world tables and help in understanding how data flows through the pipeline:
