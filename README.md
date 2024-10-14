@@ -28,8 +28,8 @@ In the context of this lab, the primary challenge is to build a robust data pipe
    - Utilized statistical models to forecast stock prices based on historical data.
    - Evaluated the accuracy of the forecasts to ensure reliability.
      
-6.**Volumn Trend**
-  -- Created new table with lag and difference columns to facilitate time series analysis.
+6. **Volumn Trend**
+  -  Created new table with lag and difference columns to facilitate time series analysis.
 
 7. **Results**
    - Summarized the results of the forecasting model and provided insights based on the analysis.
