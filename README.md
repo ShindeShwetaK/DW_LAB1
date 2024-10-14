@@ -39,7 +39,30 @@ In the context of this lab, the primary challenge is to build a robust data pipe
 
 8. **Data Visulization**
    - Create plots for better understanding of data and stock trends.
+  
+## Python Files Overview
 
+### 1. `stock_pipeline_ETL.py`
+- **Purpose**: Extracts stock data from an external API and loads it into Snowflake.
+- **Key Functions**:
+  - `return_last_90d_price()`: Fetches historical and current stock price data.
+  - `create_load_incremental()`: Loads the extracted data into a Snowflake staging table and then main table(incremental load).
+
+### 2. `stock_pipeline_MLandAG.py`
+- **Purpose**: Applies ARIMA forecasting on the stock data.
+- **Key Functions**:
+  - `train_arima_model()`: Trains an ARIMA model on historical stock data.
+  - `forecast(steps=10)`: Generates 10-day forecasts for stock prices and stores the output in Snowflake.
+
+### 3. `Stock_DataVisuals.ipynb`
+- **Purpose**: To plot graphs using the data loading in the tables.
+- **Plots**:
+  - **Bar Gragh**: Shows us the Volume-Price Change Correlation by Symbol.
+  - **Scatter Plot**: Shows us the Volume Change Scatter Plot (by Symbol and Date).
+
+### 4. `*.csv`
+-Several CSV files serve as table extracts, providing the data needed for this project. These files are used to simulate real-world tables and help in understanding how data flows through the pipeline:
+  
 ## Conclusion
 
 The lab successfully demonstrated the end-to-end process of building a data pipeline, from data extraction to loading into a Snowflake data warehouse. Building a ML forcasting model, new table for undersang volumn difference using LAG. The plots implemention gives a clear picture of correlation of the stocks and how the trent changes.
