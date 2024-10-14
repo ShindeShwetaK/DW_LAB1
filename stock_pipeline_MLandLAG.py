@@ -24,7 +24,6 @@ def return_snowflake_conn():
     return conn.cursor()
 
 
-
 @task
 # Suppress warnings from ARIMA model
 #warnings.filterwarnings("ignore")
