@@ -144,7 +144,7 @@ with DAG(
     start_date = datetime(2024,10,11),
     catchup=False,
     tags=['ETL'],
-    schedule = '@daily'
+    schedule = '* 19 * * *'
 ) as dag1:
     
     price_list = return_last_90d_price(["SBUX","NYT"])
