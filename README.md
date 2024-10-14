@@ -60,7 +60,7 @@ In the context of this lab, the primary challenge is to build a robust data pipe
   - **Bar Gragh**: Shows us the Volume-Price Change Correlation by Symbol.
   - **Scatter Plot**: Shows us the Volume Change Scatter Plot (by Symbol and Date).
  
-### 4. `Snowflake_ML`
+### 4. `Snowflake_ML.sql`
 - **Purpose**: Snowflake ML queries to forecast data.
 - **Key Functions**:
   - To create a view based on we we can create a predection model.
