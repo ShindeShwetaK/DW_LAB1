@@ -15,7 +15,7 @@ In the context of this lab, the primary challenge is to build a robust data pipe
    - Installed necessary libraries and set up the development environment for Apache Airflow and Snowflake.
 
 2. **Data Extraction**
-   - Connected to the source API and extracted the relevant datasets required for analysis.
+   - Connected to the source API(https://www.alphavantage.co/documentation/) and extracted the relevant datasets required for analysis.
    - For this Lab 1 we are using Starbucks(SBUX) and New York Times(NYT) stock data.
 
 3. **Data Transformation**
@@ -23,13 +23,16 @@ In the context of this lab, the primary challenge is to build a robust data pipe
 
 4. **Data Loading**
    - Loaded the transformed data into the Snowflake main table using Apache Airflow DAGs using incremental load.
+   - 1st load data in staging table DEV.STOCK.STOCK_PRICE_STAGE and then in main table DEV.STOCK.STOCK_PRICE_ANALYSIS
 
 5. **Forecasting**
    - Utilized statistical models to forecast stock prices based on historical data.
    - Evaluated the accuracy of the forecasts to ensure reliability.
+   - Forcast table DEV.STOCK.STOCK_PRICE_FORECAST
      
 6. **Volumn Trend**
-   - Created new table with lag and difference columns to facilitate time series analysis.
+   - Created new table DEV.STOCK.STOCK_VOLUMN_POINTS with lag and difference columns to facilitate time series analysis.
+   - Calculate Correlation of the stock using LAG windows function.
 
 7. **Results**
    - Summarized the results of the forecasting model and provided insights based on the analysis.
