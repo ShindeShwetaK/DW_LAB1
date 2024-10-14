@@ -61,7 +61,7 @@ In the context of this lab, the primary challenge is to build a robust data pipe
   - **Scatter Plot**: Shows us the Volume Change Scatter Plot (by Symbol and Date).
 
 ### 4. `*.csv`
--Several CSV files serve as table extracts, providing the data needed for this project. These files are used to simulate real-world tables and help in understanding how data flows through the pipeline:
+- Several CSV files serve as table extracts, providing the data needed for this project. These files are used to simulate real-world tables and help in understanding how data flows through the pipeline:
   
 ## Conclusion
 
